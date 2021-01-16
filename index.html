@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/cards.js"></script>
+    <script src="JS/modal.js"></script>
+    <title>Тестовое задание</title>
+  </head>
+
+  <body>
+    <div class="menu">
+      <div class="menu__field">
+        <div class="container"></div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form action="PHP/post.php" method="post" name="form">
+            <div data-close class="modal__close">&times;</div>
+            <div class="modal__title">
+              Мы свяжемся с вами как можно быстрее!
+            </div>
+            <input
+              required
+              placeholder="Ваше имя"
+              name="name"
+              type="text"
+              class="modal__input"
+            />
+            <input
+              required
+              placeholder="Ваш номер телефона"
+              name="phone"
+              type="phone"
+              class="modal__input"
+            />
+            <input
+              required
+              placeholder="Ваш email"
+              name="email"
+              type="text"
+              class="modal__input"
+            />
+            <div name="itemName" class="modal__input modal__name"></div>
+            <input class="btn" type="submit" value="Отправить" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
